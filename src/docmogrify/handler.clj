@@ -8,7 +8,8 @@
   (:require [clojure.java.io    :as io]
             [compojure.handler  :as handler]
             [compojure.route    :as route]
-            [docmogrify.prince  :as prince]))
+            [docmogrify.prince  :as prince])
+  (:gen-class))
 
 (defn authenticated? [t]
   (= t (env :auth-token)))

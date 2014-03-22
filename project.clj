@@ -8,6 +8,7 @@
                  [ring/ring-json "0.2.0"]
                  [ring-token-authentication "0.1.0"]]
   :main docmogrify.handler
+  :aot [docmogrify.handler]
   :plugins [[lein-environ "0.4.0"] [lein-ring "0.8.10"]]
   :ring {:handler docmogrify.handler/app}
   :profiles
