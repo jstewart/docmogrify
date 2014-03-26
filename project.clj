@@ -1,7 +1,7 @@
 (defproject docmogrify "0.1.0"
   :description "API that from one type to another. Currently supports princexml"
   :url "https://github.com/jstewart/docmogrify"
-  :dependencies [[org.clojure/clojure "1.5.1"]
+  :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.6"]
                  [environ "0.4.0"]
                  [ring/ring-jetty-adapter "1.2.2"]
