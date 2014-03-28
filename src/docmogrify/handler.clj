@@ -42,7 +42,7 @@
       (wrap-token-authentication authenticated?)))
 
 (defn start-server []
-  (run-jetty #'app {:port (env :port 8080) :join? false}))
+  (run-jetty #'app {:port (Integer. (env :port 8080)) :join? false}))
 
 (defn -main [& args]
   (start-server))
